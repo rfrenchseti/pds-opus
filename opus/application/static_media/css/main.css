@@ -607,8 +607,12 @@ div.gallery {
 }
 .widget-header > .widget-title {
     line-height:20px;
-
 }
+
+.widget-header > .widget-category {
+  line-height:20px;
+}
+
 .widget-toolbar {
     margin:0; padding:0;
     line-height:15px;

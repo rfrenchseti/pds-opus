@@ -328,15 +328,7 @@ def api_get_widget(request, **kwargs):
     remove_str = '<a class = "remove_input" href = "">-</a>'
     add_str = '<a class = "add_input" href = "">add</a> '
 
-    append_to_label = ''  # text to append to a widget label
     search_form = param_info.category_name
-    if 'obs_surface_geometry__' in search_form:
-        # append the target name to surface geo widget labels
-        try:
-            append_to_label = " - %s" % search_form.split('__')[1].title()
-        except KeyError:
-            pass
-
 
     if form_type in settings.RANGE_FIELDS:
         auto_id = False
@@ -489,6 +481,10 @@ def api_get_widget(request, **kwargs):
 
     label = param_info.label
     intro = param_info.intro
+    append_to_label = TableNames.objects.get(table_name=param_info.category_name).label
+    append_to_label = append_to_label.replace('Constraints', '')
+    append_to_label = append_to_label.replace('Mission', '')
+    append_to_label = append_to_label.strip(' ')
 
     range_fields = settings.RANGE_FIELDS
 
