@@ -31,1671 +31,6 @@ class ZZGroupingTargetName(models.Model):
         db_table = 'grouping_target_name'
 
 
-class ZZImpMultObsGeneralInstHostId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_inst_host_id'
-
-
-class ZZImpMultObsGeneralInstrumentId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_instrument_id'
-
-
-class ZZImpMultObsGeneralMissionId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_mission_id'
-
-
-class ZZImpMultObsGeneralObservationType(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_observation_type'
-
-
-class ZZImpMultObsGeneralPlanetId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_planet_id'
-
-
-class ZZImpMultObsGeneralQuantity(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_quantity'
-
-
-class ZZImpMultObsGeneralTargetClass(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_target_class'
-
-
-class ZZImpMultObsGeneralTargetName(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=30)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    grouping = models.CharField(max_length=7, blank=True, null=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_general_target_name'
-
-
-class ZZImpMultObsInstrumentCovimsChannel(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_channel'
-
-
-class ZZImpMultObsInstrumentCovimsInstrumentModeId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_instrument_mode_id'
-
-
-class ZZImpMultObsInstrumentCovimsIrSamplingModeId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_ir_sampling_mode_id'
-
-
-class ZZImpMultObsInstrumentCovimsSpectralEditing(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_spectral_editing'
-
-
-class ZZImpMultObsInstrumentCovimsSpectralSumming(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_spectral_summing'
-
-
-class ZZImpMultObsInstrumentCovimsStarTracking(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_star_tracking'
-
-
-class ZZImpMultObsInstrumentCovimsVisSamplingModeId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_instrument_covims_vis_sampling_mode_id'
-
-
-class ZZImpMultObsMissionCassiniCassiniTargetCode(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_mission_cassini_cassini_target_code'
-
-
-class ZZImpMultObsMissionCassiniIsPrime(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_mission_cassini_is_prime'
-
-
-class ZZImpMultObsMissionCassiniMissionPhaseName(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_mission_cassini_mission_phase_name'
-
-
-class ZZImpMultObsMissionCassiniPrimeInstId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_mission_cassini_prime_inst_id'
-
-
-class ZZImpMultObsMissionCassiniRevNo(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_mission_cassini_rev_no'
-
-
-class ZZImpMultObsSurfaceGeometryTargetName(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=30)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    grouping = models.CharField(max_length=7, blank=True, null=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_surface_geometry_target_name'
-
-
-class ZZImpMultObsTypeImageImageTypeId(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_type_image_image_type_id'
-
-
-class ZZImpMultObsWavelengthPolarizationType(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_wavelength_polarization_type'
-
-
-class ZZImpMultObsWavelengthSpecFlag(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    value = models.CharField(max_length=100, blank=True, null=True)
-    label = models.CharField(max_length=60)
-    disp_order = models.IntegerField()
-    display = models.CharField(max_length=1)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_mult_obs_wavelength_spec_flag'
-
-
-class ZZImpObsGeneral(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    opus_id = models.CharField(unique=True, max_length=80)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    mission_id = models.CharField(max_length=3)
-    inst_host_id = models.CharField(max_length=3)
-    planet_id = models.CharField(max_length=3)
-    target_name = models.CharField(max_length=20, blank=True, null=True)
-    target_class = models.CharField(max_length=12)
-    time1 = models.FloatField(blank=True, null=True)
-    time2 = models.FloatField(blank=True, null=True)
-    observation_duration = models.FloatField(blank=True, null=True)
-    quantity = models.CharField(max_length=25)
-    right_asc1 = models.FloatField(blank=True, null=True)
-    right_asc2 = models.FloatField(blank=True, null=True)
-    right_asc = models.FloatField(blank=True, null=True)
-    d_right_asc = models.FloatField(blank=True, null=True)
-    declination1 = models.FloatField(blank=True, null=True)
-    declination2 = models.FloatField(blank=True, null=True)
-    observation_type = models.CharField(max_length=3, blank=True, null=True)
-    ring_obs_id = models.CharField(max_length=40, blank=True, null=True)
-    primary_file_spec = models.CharField(max_length=240, blank=True, null=True)
-    preview_images = models.TextField(blank=True, null=True)  # This field type is a guess.
-    mult_obs_general_instrument = models.ForeignKey(ImpMultObsGeneralInstrumentId, models.DO_NOTHING)
-    mult_obs_general_mission = models.ForeignKey(ImpMultObsGeneralMissionId, models.DO_NOTHING)
-    mult_obs_general_inst_host = models.ForeignKey(ImpMultObsGeneralInstHostId, models.DO_NOTHING)
-    mult_obs_general_planet = models.ForeignKey(ImpMultObsGeneralPlanetId, models.DO_NOTHING)
-    mult_obs_general_target_name = models.ForeignKey(ImpMultObsGeneralTargetName, models.DO_NOTHING, db_column='mult_obs_general_target_name')
-    mult_obs_general_target_class = models.ForeignKey(ImpMultObsGeneralTargetClass, models.DO_NOTHING, db_column='mult_obs_general_target_class')
-    mult_obs_general_quantity = models.ForeignKey(ImpMultObsGeneralQuantity, models.DO_NOTHING, db_column='mult_obs_general_quantity')
-    mult_obs_general_observation_type = models.ForeignKey(ImpMultObsGeneralObservationType, models.DO_NOTHING, db_column='mult_obs_general_observation_type')
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_general'
-
-
-class ZZImpObsInstrumentCovims(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_mode_id = models.CharField(max_length=14)
-    spectral_editing = models.CharField(max_length=3)
-    spectral_summing = models.CharField(max_length=3)
-    star_tracking = models.CharField(max_length=3)
-    swath_width = models.PositiveSmallIntegerField()
-    swath_length = models.PositiveSmallIntegerField()
-    ir_exposure = models.FloatField(blank=True, null=True)
-    ir_sampling_mode_id = models.CharField(max_length=6)
-    vis_exposure = models.FloatField(blank=True, null=True)
-    vis_sampling_mode_id = models.CharField(max_length=6)
-    channel = models.CharField(max_length=3)
-    mult_obs_instrument_covims_instrument_mode = models.ForeignKey(ImpMultObsInstrumentCovimsInstrumentModeId, models.DO_NOTHING)
-    mult_obs_instrument_covims_spectral_editing = models.ForeignKey(ImpMultObsInstrumentCovimsSpectralEditing, models.DO_NOTHING, db_column='mult_obs_instrument_covims_spectral_editing')
-    mult_obs_instrument_covims_spectral_summing = models.ForeignKey(ImpMultObsInstrumentCovimsSpectralSumming, models.DO_NOTHING, db_column='mult_obs_instrument_covims_spectral_summing')
-    mult_obs_instrument_covims_star_tracking = models.ForeignKey(ImpMultObsInstrumentCovimsStarTracking, models.DO_NOTHING, db_column='mult_obs_instrument_covims_star_tracking')
-    mult_obs_instrument_covims_ir_sampling_mode = models.ForeignKey(ImpMultObsInstrumentCovimsIrSamplingModeId, models.DO_NOTHING)
-    mult_obs_instrument_covims_vis_sampling_mode = models.ForeignKey(ImpMultObsInstrumentCovimsVisSamplingModeId, models.DO_NOTHING)
-    mult_obs_instrument_covims_channel = models.ForeignKey(ImpMultObsInstrumentCovimsChannel, models.DO_NOTHING, db_column='mult_obs_instrument_covims_channel')
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_instrument_covims'
-
-
-class ZZImpObsMissionCassini(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    obs_name = models.CharField(max_length=30)
-    rev_no = models.CharField(max_length=3, blank=True, null=True)
-    rev_no_int = models.IntegerField(blank=True, null=True)
-    is_prime = models.CharField(max_length=3)
-    prime_inst_id = models.CharField(max_length=6, blank=True, null=True)
-    spacecraft_clock_count1 = models.FloatField(blank=True, null=True)
-    spacecraft_clock_count2 = models.FloatField(blank=True, null=True)
-    ert1 = models.FloatField(blank=True, null=True)
-    ert2 = models.FloatField(blank=True, null=True)
-    cassini_target_code = models.CharField(max_length=50, blank=True, null=True)
-    activity_name = models.CharField(max_length=9, blank=True, null=True)
-    mission_phase_name = models.CharField(max_length=32, blank=True, null=True)
-    sequence_id = models.CharField(max_length=4, blank=True, null=True)
-    mult_obs_mission_cassini_rev_no = models.ForeignKey(ImpMultObsMissionCassiniRevNo, models.DO_NOTHING, db_column='mult_obs_mission_cassini_rev_no')
-    mult_obs_mission_cassini_is_prime = models.ForeignKey(ImpMultObsMissionCassiniIsPrime, models.DO_NOTHING, db_column='mult_obs_mission_cassini_is_prime')
-    mult_obs_mission_cassini_prime_inst = models.ForeignKey(ImpMultObsMissionCassiniPrimeInstId, models.DO_NOTHING)
-    mult_obs_mission_cassini_cassini_target_code = models.ForeignKey(ImpMultObsMissionCassiniCassiniTargetCode, models.DO_NOTHING, db_column='mult_obs_mission_cassini_cassini_target_code')
-    mult_obs_mission_cassini_mission_phase_name = models.ForeignKey(ImpMultObsMissionCassiniMissionPhaseName, models.DO_NOTHING, db_column='mult_obs_mission_cassini_mission_phase_name')
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_mission_cassini'
-
-
-class ZZImpObsPds(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    data_set_id = models.CharField(max_length=40)
-    product_id = models.CharField(max_length=30)
-    product_creation_time = models.FloatField(blank=True, null=True)
-    primary_file_spec = models.CharField(max_length=240, blank=True, null=True)
-    note = models.CharField(max_length=255, blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_pds'
-
-
-class ZZImpObsRingGeometry(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    ring_radius1 = models.FloatField(blank=True, null=True)
-    ring_radius2 = models.FloatField(blank=True, null=True)
-    resolution1 = models.FloatField(blank=True, null=True)
-    resolution2 = models.FloatField(blank=True, null=True)
-    projected_radial_resolution1 = models.FloatField(blank=True, null=True)
-    projected_radial_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_ring_intercept1 = models.FloatField(blank=True, null=True)
-    range_to_ring_intercept2 = models.FloatField(blank=True, null=True)
-    ring_center_distance = models.FloatField(blank=True, null=True)
-    j2000_longitude1 = models.FloatField(blank=True, null=True)
-    j2000_longitude2 = models.FloatField(blank=True, null=True)
-    j2000_longitude = models.FloatField(blank=True, null=True)
-    d_j2000_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    longitude_wrt_observer1 = models.FloatField(blank=True, null=True)
-    longitude_wrt_observer2 = models.FloatField(blank=True, null=True)
-    ring_azimuth_wrt_observer1 = models.FloatField(blank=True, null=True)
-    ring_azimuth_wrt_observer2 = models.FloatField(blank=True, null=True)
-    sub_solar_ring_long = models.FloatField(blank=True, null=True)
-    sub_observer_ring_long = models.FloatField(blank=True, null=True)
-    solar_ring_elev1 = models.FloatField(blank=True, null=True)
-    solar_ring_elev2 = models.FloatField(blank=True, null=True)
-    observer_ring_elevation1 = models.FloatField(blank=True, null=True)
-    observer_ring_elevation2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    north_based_incidence1 = models.FloatField(blank=True, null=True)
-    north_based_incidence2 = models.FloatField(blank=True, null=True)
-    north_based_emission1 = models.FloatField(blank=True, null=True)
-    north_based_emission2 = models.FloatField(blank=True, null=True)
-    ring_center_phase = models.FloatField(blank=True, null=True)
-    ring_center_incidence = models.FloatField(blank=True, null=True)
-    ring_center_emission = models.FloatField(blank=True, null=True)
-    ring_center_north_based_incidence = models.FloatField(blank=True, null=True)
-    ring_center_north_based_emission = models.FloatField(blank=True, null=True)
-    solar_ring_opening_angle = models.FloatField(blank=True, null=True)
-    observer_ring_opening_angle = models.FloatField(blank=True, null=True)
-    edge_on_radius1 = models.FloatField(blank=True, null=True)
-    edge_on_radius2 = models.FloatField(blank=True, null=True)
-    edge_on_altitude1 = models.FloatField(blank=True, null=True)
-    edge_on_altitude2 = models.FloatField(blank=True, null=True)
-    edge_on_radial_resolution1 = models.FloatField(blank=True, null=True)
-    edge_on_radial_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_edge_on_point1 = models.FloatField(blank=True, null=True)
-    range_to_edge_on_point2 = models.FloatField(blank=True, null=True)
-    edge_on_j2000_longitude1 = models.FloatField(blank=True, null=True)
-    edge_on_j2000_longitude2 = models.FloatField(blank=True, null=True)
-    edge_on_j2000_longitude = models.FloatField(blank=True, null=True)
-    d_edge_on_j2000_longitude = models.FloatField(blank=True, null=True)
-    edge_on_solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    edge_on_solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    edge_on_solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_edge_on_solar_hour_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_ring_geometry'
-
-
-class ZZImpObsSurfaceGeometry(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    target_name = models.CharField(max_length=75)
-    mult_obs_surface_geometry_target_name = models.ForeignKey(ImpMultObsSurfaceGeometryTargetName, models.DO_NOTHING, db_column='mult_obs_surface_geometry_target_name')
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry'
-
-
-class ZZImpObsSurfaceGeometryAtlas(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__atlas'
-
-
-class ZZImpObsSurfaceGeometryCalypso(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__calypso'
-
-
-class ZZImpObsSurfaceGeometryDaphnis(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__daphnis'
-
-
-class ZZImpObsSurfaceGeometryDione(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__dione'
-
-
-class ZZImpObsSurfaceGeometryEnceladus(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__enceladus'
-
-
-class ZZImpObsSurfaceGeometryEpimetheus(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__epimetheus'
-
-
-class ZZImpObsSurfaceGeometryHelene(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__helene'
-
-
-class ZZImpObsSurfaceGeometryHyperion(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__hyperion'
-
-
-class ZZImpObsSurfaceGeometryIapetus(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__iapetus'
-
-
-class ZZImpObsSurfaceGeometryJanus(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__janus'
-
-
-class ZZImpObsSurfaceGeometryMimas(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__mimas'
-
-
-class ZZImpObsSurfaceGeometryPallene(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__pallene'
-
-
-class ZZImpObsSurfaceGeometryPan(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__pan'
-
-
-class ZZImpObsSurfaceGeometryPandora(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__pandora'
-
-
-class ZZImpObsSurfaceGeometryPhoebe(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__phoebe'
-
-
-class ZZImpObsSurfaceGeometryPrometheus(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__prometheus'
-
-
-class ZZImpObsSurfaceGeometryRhea(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__rhea'
-
-
-class ZZImpObsSurfaceGeometrySaturn(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__saturn'
-
-
-class ZZImpObsSurfaceGeometryTelesto(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__telesto'
-
-
-class ZZImpObsSurfaceGeometryTethys(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__tethys'
-
-
-class ZZImpObsSurfaceGeometryTitan(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__titan'
-
-
-class ZZImpObsSurfaceGeometryYmir(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
-    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
-    planetographic_latitude1 = models.FloatField(blank=True, null=True)
-    planetographic_latitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude1 = models.FloatField(blank=True, null=True)
-    iau_west_longitude2 = models.FloatField(blank=True, null=True)
-    iau_west_longitude = models.FloatField(blank=True, null=True)
-    d_iau_west_longitude = models.FloatField(blank=True, null=True)
-    solar_hour_angle1 = models.FloatField(blank=True, null=True)
-    solar_hour_angle2 = models.FloatField(blank=True, null=True)
-    solar_hour_angle = models.FloatField(blank=True, null=True)
-    d_solar_hour_angle = models.FloatField(blank=True, null=True)
-    observer_longitude1 = models.FloatField(blank=True, null=True)
-    observer_longitude2 = models.FloatField(blank=True, null=True)
-    observer_longitude = models.FloatField(blank=True, null=True)
-    d_observer_longitude = models.FloatField(blank=True, null=True)
-    finest_resolution1 = models.FloatField(blank=True, null=True)
-    finest_resolution2 = models.FloatField(blank=True, null=True)
-    coarsest_resolution1 = models.FloatField(blank=True, null=True)
-    coarsest_resolution2 = models.FloatField(blank=True, null=True)
-    range_to_body1 = models.FloatField(blank=True, null=True)
-    range_to_body2 = models.FloatField(blank=True, null=True)
-    phase1 = models.FloatField(blank=True, null=True)
-    phase2 = models.FloatField(blank=True, null=True)
-    incidence1 = models.FloatField(blank=True, null=True)
-    incidence2 = models.FloatField(blank=True, null=True)
-    emission1 = models.FloatField(blank=True, null=True)
-    emission2 = models.FloatField(blank=True, null=True)
-    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
-    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
-    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
-    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
-    center_resolution = models.FloatField(blank=True, null=True)
-    center_distance = models.FloatField(blank=True, null=True)
-    center_phase_angle = models.FloatField(blank=True, null=True)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_surface_geometry__ymir'
-
-
-class ZZImpObsTypeImage(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    image_type_id = models.CharField(max_length=4, blank=True, null=True)
-    duration = models.FloatField(blank=True, null=True)
-    levels = models.PositiveIntegerField(blank=True, null=True)
-    greater_pixel_size = models.PositiveIntegerField(blank=True, null=True)
-    lesser_pixel_size = models.PositiveIntegerField(blank=True, null=True)
-    mult_obs_type_image_image_type = models.ForeignKey(ImpMultObsTypeImageImageTypeId, models.DO_NOTHING)
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_type_image'
-
-
-class ZZImpObsWavelength(models.Model):
-    obs_general = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    opus_id = models.ForeignKey(ImpObsGeneral, models.DO_NOTHING)
-    volume_id = models.CharField(max_length=11)
-    instrument_id = models.CharField(max_length=9)
-    wavelength1 = models.FloatField(blank=True, null=True)
-    wavelength2 = models.FloatField(blank=True, null=True)
-    wave_res1 = models.FloatField(blank=True, null=True)
-    wave_res2 = models.FloatField(blank=True, null=True)
-    wave_no1 = models.FloatField(blank=True, null=True)
-    wave_no2 = models.FloatField(blank=True, null=True)
-    wave_no_res1 = models.FloatField(blank=True, null=True)
-    wave_no_res2 = models.FloatField(blank=True, null=True)
-    spec_flag = models.CharField(max_length=3)
-    spec_size = models.PositiveIntegerField(blank=True, null=True)
-    polarization_type = models.CharField(max_length=8)
-    mult_obs_wavelength_spec_flag = models.ForeignKey(ImpMultObsWavelengthSpecFlag, models.DO_NOTHING, db_column='mult_obs_wavelength_spec_flag')
-    mult_obs_wavelength_polarization_type = models.ForeignKey(ImpMultObsWavelengthPolarizationType, models.DO_NOTHING, db_column='mult_obs_wavelength_polarization_type')
-    id = models.PositiveIntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'imp_obs_wavelength'
-
-
 class MultObsGeneralInstHostId(models.Model):
     id = models.PositiveIntegerField(primary_key=True)
     value = models.CharField(max_length=100, blank=True, null=True)
@@ -1799,6 +134,409 @@ class MultObsGeneralTargetName(models.Model):
     class Meta:
         managed = False
         db_table = 'mult_obs_general_target_name'
+
+
+class MultObsInstrumentCocirsDetectorId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_detector_id'
+
+
+class MultObsInstrumentCocirsInstrumentModeAllFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_all_flag'
+
+
+class MultObsInstrumentCocirsInstrumentModeBlinkingFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_blinking_flag'
+
+
+class MultObsInstrumentCocirsInstrumentModeCentersFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_centers_flag'
+
+
+class MultObsInstrumentCocirsInstrumentModeEvenFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_even_flag'
+
+
+class MultObsInstrumentCocirsInstrumentModeOddFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_odd_flag'
+
+
+class MultObsInstrumentCocirsInstrumentModePairsFlag(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_cocirs_instrument_mode_pairs_flag'
+
+
+class MultObsInstrumentCoissCamera(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_camera'
+
+
+class MultObsInstrumentCoissCombinedFilter(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_combined_filter'
+
+
+class MultObsInstrumentCoissCompressionType(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_compression_type'
+
+
+class MultObsInstrumentCoissDataConversionType(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_data_conversion_type'
+
+
+class MultObsInstrumentCoissGainModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_gain_mode_id'
+
+
+class MultObsInstrumentCoissImageObservationType(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_image_observation_type'
+
+
+class MultObsInstrumentCoissInstrumentModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_instrument_mode_id'
+
+
+class MultObsInstrumentCoissShutterModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_shutter_mode_id'
+
+
+class MultObsInstrumentCoissShutterStateId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_shutter_state_id'
+
+
+class MultObsInstrumentCoissTargetDesc(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_coiss_target_desc'
+
+
+class MultObsInstrumentCouvisChannel(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_channel'
+
+
+class MultObsInstrumentCouvisCompressionType(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_compression_type'
+
+
+class MultObsInstrumentCouvisDwellTime(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_dwell_time'
+
+
+class MultObsInstrumentCouvisObservationType(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_observation_type'
+
+
+class MultObsInstrumentCouvisOccultationPortState(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_occultation_port_state'
+
+
+class MultObsInstrumentCouvisSlitState(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_slit_state'
+
+
+class MultObsInstrumentCouvisTestPulseState(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_couvis_test_pulse_state'
+
+
+class MultObsInstrumentCovimsChannel(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_channel'
+
+
+class MultObsInstrumentCovimsInstrumentModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_instrument_mode_id'
+
+
+class MultObsInstrumentCovimsIrSamplingModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_ir_sampling_mode_id'
+
+
+class MultObsInstrumentCovimsSpectralEditing(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_spectral_editing'
+
+
+class MultObsInstrumentCovimsSpectralSumming(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_spectral_summing'
+
+
+class MultObsInstrumentCovimsStarTracking(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_star_tracking'
+
+
+class MultObsInstrumentCovimsVisSamplingModeId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_covims_vis_sampling_mode_id'
 
 
 class MultObsInstrumentGossiCompressionType(models.Model):
@@ -1916,6 +654,162 @@ class MultObsInstrumentNhmvicInstrumentCompressionType(models.Model):
     class Meta:
         managed = False
         db_table = 'mult_obs_instrument_nhmvic_instrument_compression_type'
+
+
+class MultObsInstrumentVgissCamera(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_camera'
+
+
+class MultObsInstrumentVgissEditMode(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_edit_mode'
+
+
+class MultObsInstrumentVgissFilterName(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_filter_name'
+
+
+class MultObsInstrumentVgissFilterNumber(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_filter_number'
+
+
+class MultObsInstrumentVgissGainMode(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_gain_mode'
+
+
+class MultObsInstrumentVgissScanMode(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_scan_mode'
+
+
+class MultObsInstrumentVgissShutterMode(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_instrument_vgiss_shutter_mode'
+
+
+class MultObsMissionCassiniCassiniTargetCode(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_cassini_cassini_target_code'
+
+
+class MultObsMissionCassiniIsPrime(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_cassini_is_prime'
+
+
+class MultObsMissionCassiniMissionPhaseName(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_cassini_mission_phase_name'
+
+
+class MultObsMissionCassiniPrimeInstId(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_cassini_prime_inst_id'
+
+
+class MultObsMissionCassiniRevNo(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_cassini_rev_no'
 
 
 class MultObsMissionGalileoOrbitNumber(models.Model):
@@ -2113,6 +1007,19 @@ class MultObsMissionNewHorizonsMissionPhase(models.Model):
         db_table = 'mult_obs_mission_new_horizons_mission_phase'
 
 
+class MultObsMissionVoyagerMissionPhaseName(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    value = models.CharField(max_length=100, blank=True, null=True)
+    label = models.CharField(max_length=60)
+    disp_order = models.IntegerField()
+    display = models.CharField(max_length=1)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'mult_obs_mission_voyager_mission_phase_name'
+
+
 class MultObsSurfaceGeometryTargetName(models.Model):
     id = models.PositiveIntegerField(primary_key=True)
     value = models.CharField(max_length=100, blank=True, null=True)
@@ -2205,6 +1112,130 @@ class ObsGeneral(models.Model):
         db_table = 'obs_general'
 
 
+class ObsInstrumentCocirs(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    detector_id = models.CharField(max_length=3)
+    instrument_mode_blinking_flag = models.CharField(max_length=3)
+    instrument_mode_even_flag = models.CharField(max_length=3)
+    instrument_mode_odd_flag = models.CharField(max_length=3)
+    instrument_mode_centers_flag = models.CharField(max_length=3)
+    instrument_mode_pairs_flag = models.CharField(max_length=3)
+    instrument_mode_all_flag = models.CharField(max_length=3)
+    mult_obs_instrument_cocirs_detector = models.ForeignKey(MultObsInstrumentCocirsDetectorId, models.DO_NOTHING)
+    mult_obs_instrument_cocirs_instrument_mode_blinking_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModeBlinkingFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_blinking_flag')
+    mult_obs_instrument_cocirs_instrument_mode_even_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModeEvenFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_even_flag')
+    mult_obs_instrument_cocirs_instrument_mode_odd_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModeOddFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_odd_flag')
+    mult_obs_instrument_cocirs_instrument_mode_centers_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModeCentersFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_centers_flag')
+    mult_obs_instrument_cocirs_instrument_mode_pairs_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModePairsFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_pairs_flag')
+    mult_obs_instrument_cocirs_instrument_mode_all_flag = models.ForeignKey(MultObsInstrumentCocirsInstrumentModeAllFlag, models.DO_NOTHING, db_column='mult_obs_instrument_cocirs_instrument_mode_all_flag')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_instrument_cocirs'
+
+
+class ObsInstrumentCoiss(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    data_conversion_type = models.CharField(max_length=5, blank=True, null=True)
+    compression_type = models.CharField(max_length=8, blank=True, null=True)
+    gain_mode_id = models.CharField(max_length=20, blank=True, null=True)
+    image_observation_type = models.CharField(max_length=48, blank=True, null=True)
+    missing_lines = models.SmallIntegerField(blank=True, null=True)
+    shutter_mode_id = models.CharField(max_length=7, blank=True, null=True)
+    shutter_state_id = models.CharField(max_length=8, blank=True, null=True)
+    image_number = models.IntegerField()
+    instrument_mode_id = models.CharField(max_length=4)
+    target_desc = models.CharField(max_length=75)
+    combined_filter = models.CharField(max_length=30)
+    camera = models.CharField(max_length=1)
+    mult_obs_instrument_coiss_data_conversion_type = models.ForeignKey(MultObsInstrumentCoissDataConversionType, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_data_conversion_type')
+    mult_obs_instrument_coiss_compression_type = models.ForeignKey(MultObsInstrumentCoissCompressionType, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_compression_type')
+    mult_obs_instrument_coiss_gain_mode = models.ForeignKey(MultObsInstrumentCoissGainModeId, models.DO_NOTHING)
+    mult_obs_instrument_coiss_image_observation_type = models.ForeignKey(MultObsInstrumentCoissImageObservationType, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_image_observation_type')
+    mult_obs_instrument_coiss_shutter_mode = models.ForeignKey(MultObsInstrumentCoissShutterModeId, models.DO_NOTHING)
+    mult_obs_instrument_coiss_shutter_state = models.ForeignKey(MultObsInstrumentCoissShutterStateId, models.DO_NOTHING)
+    mult_obs_instrument_coiss_instrument_mode = models.ForeignKey(MultObsInstrumentCoissInstrumentModeId, models.DO_NOTHING)
+    mult_obs_instrument_coiss_target_desc = models.ForeignKey(MultObsInstrumentCoissTargetDesc, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_target_desc')
+    mult_obs_instrument_coiss_combined_filter = models.ForeignKey(MultObsInstrumentCoissCombinedFilter, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_combined_filter')
+    mult_obs_instrument_coiss_camera = models.ForeignKey(MultObsInstrumentCoissCamera, models.DO_NOTHING, db_column='mult_obs_instrument_coiss_camera')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_instrument_coiss'
+
+
+class ObsInstrumentCouvis(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    observation_type = models.CharField(max_length=8)
+    integration_duration = models.FloatField(blank=True, null=True)
+    compression_type = models.CharField(max_length=6)
+    occultation_port_state = models.CharField(max_length=6)
+    slit_state = models.CharField(max_length=15)
+    test_pulse_state = models.CharField(max_length=3, blank=True, null=True)
+    dwell_time = models.IntegerField(blank=True, null=True)
+    channel = models.CharField(max_length=4)
+    band1 = models.IntegerField(blank=True, null=True)
+    band2 = models.IntegerField(blank=True, null=True)
+    band_bin = models.IntegerField(blank=True, null=True)
+    line1 = models.IntegerField(blank=True, null=True)
+    line2 = models.IntegerField(blank=True, null=True)
+    line_bin = models.IntegerField(blank=True, null=True)
+    samples = models.IntegerField(blank=True, null=True)
+    mult_obs_instrument_couvis_observation_type = models.ForeignKey(MultObsInstrumentCouvisObservationType, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_observation_type')
+    mult_obs_instrument_couvis_compression_type = models.ForeignKey(MultObsInstrumentCouvisCompressionType, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_compression_type')
+    mult_obs_instrument_couvis_occultation_port_state = models.ForeignKey(MultObsInstrumentCouvisOccultationPortState, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_occultation_port_state')
+    mult_obs_instrument_couvis_slit_state = models.ForeignKey(MultObsInstrumentCouvisSlitState, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_slit_state')
+    mult_obs_instrument_couvis_test_pulse_state = models.ForeignKey(MultObsInstrumentCouvisTestPulseState, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_test_pulse_state')
+    mult_obs_instrument_couvis_dwell_time = models.ForeignKey(MultObsInstrumentCouvisDwellTime, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_dwell_time')
+    mult_obs_instrument_couvis_channel = models.ForeignKey(MultObsInstrumentCouvisChannel, models.DO_NOTHING, db_column='mult_obs_instrument_couvis_channel')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_instrument_couvis'
+
+
+class ObsInstrumentCovims(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_mode_id = models.CharField(max_length=14)
+    spectral_editing = models.CharField(max_length=3)
+    spectral_summing = models.CharField(max_length=3)
+    star_tracking = models.CharField(max_length=3)
+    swath_width = models.PositiveSmallIntegerField()
+    swath_length = models.PositiveSmallIntegerField()
+    ir_exposure = models.FloatField(blank=True, null=True)
+    ir_sampling_mode_id = models.CharField(max_length=6)
+    vis_exposure = models.FloatField(blank=True, null=True)
+    vis_sampling_mode_id = models.CharField(max_length=6)
+    channel = models.CharField(max_length=3)
+    mult_obs_instrument_covims_instrument_mode = models.ForeignKey(MultObsInstrumentCovimsInstrumentModeId, models.DO_NOTHING)
+    mult_obs_instrument_covims_spectral_editing = models.ForeignKey(MultObsInstrumentCovimsSpectralEditing, models.DO_NOTHING, db_column='mult_obs_instrument_covims_spectral_editing')
+    mult_obs_instrument_covims_spectral_summing = models.ForeignKey(MultObsInstrumentCovimsSpectralSumming, models.DO_NOTHING, db_column='mult_obs_instrument_covims_spectral_summing')
+    mult_obs_instrument_covims_star_tracking = models.ForeignKey(MultObsInstrumentCovimsStarTracking, models.DO_NOTHING, db_column='mult_obs_instrument_covims_star_tracking')
+    mult_obs_instrument_covims_ir_sampling_mode = models.ForeignKey(MultObsInstrumentCovimsIrSamplingModeId, models.DO_NOTHING)
+    mult_obs_instrument_covims_vis_sampling_mode = models.ForeignKey(MultObsInstrumentCovimsVisSamplingModeId, models.DO_NOTHING)
+    mult_obs_instrument_covims_channel = models.ForeignKey(MultObsInstrumentCovimsChannel, models.DO_NOTHING, db_column='mult_obs_instrument_covims_channel')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_instrument_covims'
+
+
 class ObsInstrumentGossi(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2259,6 +1290,66 @@ class ObsInstrumentNhmvic(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_instrument_nhmvic'
+
+
+class ObsInstrumentVgiss(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    image_id = models.CharField(max_length=10)
+    scan_mode = models.CharField(max_length=4)
+    shutter_mode = models.CharField(max_length=6)
+    gain_mode = models.CharField(max_length=4)
+    edit_mode = models.CharField(max_length=4)
+    filter_name = models.CharField(max_length=6)
+    filter_number = models.IntegerField()
+    camera = models.CharField(max_length=1)
+    usable_lines = models.SmallIntegerField(blank=True, null=True)
+    usable_samples = models.SmallIntegerField(blank=True, null=True)
+    mult_obs_instrument_vgiss_scan_mode = models.ForeignKey(MultObsInstrumentVgissScanMode, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_scan_mode')
+    mult_obs_instrument_vgiss_shutter_mode = models.ForeignKey(MultObsInstrumentVgissShutterMode, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_shutter_mode')
+    mult_obs_instrument_vgiss_gain_mode = models.ForeignKey(MultObsInstrumentVgissGainMode, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_gain_mode')
+    mult_obs_instrument_vgiss_edit_mode = models.ForeignKey(MultObsInstrumentVgissEditMode, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_edit_mode')
+    mult_obs_instrument_vgiss_filter_name = models.ForeignKey(MultObsInstrumentVgissFilterName, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_filter_name')
+    mult_obs_instrument_vgiss_filter_number = models.ForeignKey(MultObsInstrumentVgissFilterNumber, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_filter_number')
+    mult_obs_instrument_vgiss_camera = models.ForeignKey(MultObsInstrumentVgissCamera, models.DO_NOTHING, db_column='mult_obs_instrument_vgiss_camera')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_instrument_vgiss'
+
+
+class ObsMissionCassini(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    obs_name = models.CharField(max_length=30)
+    rev_no = models.CharField(max_length=3, blank=True, null=True)
+    rev_no_int = models.IntegerField(blank=True, null=True)
+    is_prime = models.CharField(max_length=3)
+    prime_inst_id = models.CharField(max_length=6, blank=True, null=True)
+    spacecraft_clock_count1 = models.FloatField(blank=True, null=True)
+    spacecraft_clock_count2 = models.FloatField(blank=True, null=True)
+    ert1 = models.FloatField(blank=True, null=True)
+    ert2 = models.FloatField(blank=True, null=True)
+    cassini_target_code = models.CharField(max_length=50, blank=True, null=True)
+    activity_name = models.CharField(max_length=9, blank=True, null=True)
+    mission_phase_name = models.CharField(max_length=32, blank=True, null=True)
+    sequence_id = models.CharField(max_length=4, blank=True, null=True)
+    mult_obs_mission_cassini_rev_no = models.ForeignKey(MultObsMissionCassiniRevNo, models.DO_NOTHING, db_column='mult_obs_mission_cassini_rev_no')
+    mult_obs_mission_cassini_is_prime = models.ForeignKey(MultObsMissionCassiniIsPrime, models.DO_NOTHING, db_column='mult_obs_mission_cassini_is_prime')
+    mult_obs_mission_cassini_prime_inst = models.ForeignKey(MultObsMissionCassiniPrimeInstId, models.DO_NOTHING)
+    mult_obs_mission_cassini_cassini_target_code = models.ForeignKey(MultObsMissionCassiniCassiniTargetCode, models.DO_NOTHING, db_column='mult_obs_mission_cassini_cassini_target_code')
+    mult_obs_mission_cassini_mission_phase_name = models.ForeignKey(MultObsMissionCassiniMissionPhaseName, models.DO_NOTHING, db_column='mult_obs_mission_cassini_mission_phase_name')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_mission_cassini'
 
 
 class ObsMissionGalileo(models.Model):
@@ -2339,6 +1430,23 @@ class ObsMissionNewHorizons(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_mission_new_horizons'
+
+
+class ObsMissionVoyager(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    ert = models.FloatField(blank=True, null=True)
+    spacecraft_clock_count1 = models.FloatField(blank=True, null=True)
+    spacecraft_clock_count2 = models.FloatField(blank=True, null=True)
+    mission_phase_name = models.CharField(max_length=32, blank=True, null=True)
+    mult_obs_mission_voyager_mission_phase_name = models.ForeignKey(MultObsMissionVoyagerMissionPhaseName, models.DO_NOTHING, db_column='mult_obs_mission_voyager_mission_phase_name')
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_mission_voyager'
 
 
 class ObsPds(models.Model):
@@ -2497,6 +1605,106 @@ class ObsSurfaceGeometryAdrastea(models.Model):
         db_table = 'obs_surface_geometry__adrastea'
 
 
+class ObsSurfaceGeometryAegaeon(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__aegaeon'
+
+
+class ObsSurfaceGeometryAlbiorix(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__albiorix'
+
+
 class ObsSurfaceGeometryAmalthea(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2545,6 +1753,406 @@ class ObsSurfaceGeometryAmalthea(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__amalthea'
+
+
+class ObsSurfaceGeometryAnthe(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__anthe'
+
+
+class ObsSurfaceGeometryAriel(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__ariel'
+
+
+class ObsSurfaceGeometryAtlas(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__atlas'
+
+
+class ObsSurfaceGeometryBebhionn(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__bebhionn'
+
+
+class ObsSurfaceGeometryBelinda(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__belinda'
+
+
+class ObsSurfaceGeometryBergelmir(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__bergelmir'
+
+
+class ObsSurfaceGeometryBestla(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__bestla'
+
+
+class ObsSurfaceGeometryBianca(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__bianca'
 
 
 class ObsSurfaceGeometryCallirrhoe(models.Model):
@@ -2647,6 +2255,56 @@ class ObsSurfaceGeometryCallisto(models.Model):
         db_table = 'obs_surface_geometry__callisto'
 
 
+class ObsSurfaceGeometryCalypso(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__calypso'
+
+
 class ObsSurfaceGeometryCharon(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2695,6 +2353,406 @@ class ObsSurfaceGeometryCharon(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__charon'
+
+
+class ObsSurfaceGeometryCordelia(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__cordelia'
+
+
+class ObsSurfaceGeometryCressida(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__cressida'
+
+
+class ObsSurfaceGeometryCupid(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__cupid'
+
+
+class ObsSurfaceGeometryDaphnis(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__daphnis'
+
+
+class ObsSurfaceGeometryDesdemona(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__desdemona'
+
+
+class ObsSurfaceGeometryDespina(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__despina'
+
+
+class ObsSurfaceGeometryDione(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__dione'
+
+
+class ObsSurfaceGeometryEarth(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__earth'
 
 
 class ObsSurfaceGeometryElara(models.Model):
@@ -2747,6 +2805,156 @@ class ObsSurfaceGeometryElara(models.Model):
         db_table = 'obs_surface_geometry__elara'
 
 
+class ObsSurfaceGeometryEnceladus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__enceladus'
+
+
+class ObsSurfaceGeometryEpimetheus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__epimetheus'
+
+
+class ObsSurfaceGeometryErriapus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__erriapus'
+
+
 class ObsSurfaceGeometryEuropa(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2797,6 +3005,106 @@ class ObsSurfaceGeometryEuropa(models.Model):
         db_table = 'obs_surface_geometry__europa'
 
 
+class ObsSurfaceGeometryFornjot(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__fornjot'
+
+
+class ObsSurfaceGeometryGalatea(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__galatea'
+
+
 class ObsSurfaceGeometryGanymede(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2845,6 +3153,156 @@ class ObsSurfaceGeometryGanymede(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__ganymede'
+
+
+class ObsSurfaceGeometryGreip(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__greip'
+
+
+class ObsSurfaceGeometryHati(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__hati'
+
+
+class ObsSurfaceGeometryHelene(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__helene'
 
 
 class ObsSurfaceGeometryHimalia(models.Model):
@@ -2947,6 +3405,206 @@ class ObsSurfaceGeometryHydra(models.Model):
         db_table = 'obs_surface_geometry__hydra'
 
 
+class ObsSurfaceGeometryHyperion(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__hyperion'
+
+
+class ObsSurfaceGeometryHyrrokkin(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__hyrrokkin'
+
+
+class ObsSurfaceGeometryIapetus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__iapetus'
+
+
+class ObsSurfaceGeometryIjiraq(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__ijiraq'
+
+
 class ObsSurfaceGeometryIo(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -2995,6 +3653,156 @@ class ObsSurfaceGeometryIo(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__io'
+
+
+class ObsSurfaceGeometryJanus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__janus'
+
+
+class ObsSurfaceGeometryJarnsaxa(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__jarnsaxa'
+
+
+class ObsSurfaceGeometryJuliet(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__juliet'
 
 
 class ObsSurfaceGeometryJupiter(models.Model):
@@ -3047,6 +3855,56 @@ class ObsSurfaceGeometryJupiter(models.Model):
         db_table = 'obs_surface_geometry__jupiter'
 
 
+class ObsSurfaceGeometryKari(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__kari'
+
+
 class ObsSurfaceGeometryKerberos(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -3095,6 +3953,256 @@ class ObsSurfaceGeometryKerberos(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__kerberos'
+
+
+class ObsSurfaceGeometryKiviuq(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__kiviuq'
+
+
+class ObsSurfaceGeometryLarissa(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__larissa'
+
+
+class ObsSurfaceGeometryLoge(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__loge'
+
+
+class ObsSurfaceGeometryMab(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__mab'
+
+
+class ObsSurfaceGeometryMethone(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__methone'
 
 
 class ObsSurfaceGeometryMetis(models.Model):
@@ -3147,6 +4255,256 @@ class ObsSurfaceGeometryMetis(models.Model):
         db_table = 'obs_surface_geometry__metis'
 
 
+class ObsSurfaceGeometryMimas(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__mimas'
+
+
+class ObsSurfaceGeometryMiranda(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__miranda'
+
+
+class ObsSurfaceGeometryMundilfari(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__mundilfari'
+
+
+class ObsSurfaceGeometryNaiad(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__naiad'
+
+
+class ObsSurfaceGeometryNarvi(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__narvi'
+
+
 class ObsSurfaceGeometryNeptune(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -3195,6 +4553,56 @@ class ObsSurfaceGeometryNeptune(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__neptune'
+
+
+class ObsSurfaceGeometryNereid(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__nereid'
 
 
 class ObsSurfaceGeometryNix(models.Model):
@@ -3247,6 +4655,406 @@ class ObsSurfaceGeometryNix(models.Model):
         db_table = 'obs_surface_geometry__nix'
 
 
+class ObsSurfaceGeometryOberon(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__oberon'
+
+
+class ObsSurfaceGeometryOphelia(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__ophelia'
+
+
+class ObsSurfaceGeometryPaaliaq(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__paaliaq'
+
+
+class ObsSurfaceGeometryPallene(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__pallene'
+
+
+class ObsSurfaceGeometryPan(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__pan'
+
+
+class ObsSurfaceGeometryPandora(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__pandora'
+
+
+class ObsSurfaceGeometryPerdita(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__perdita'
+
+
+class ObsSurfaceGeometryPhoebe(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__phoebe'
+
+
 class ObsSurfaceGeometryPluto(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -3295,6 +5103,656 @@ class ObsSurfaceGeometryPluto(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__pluto'
+
+
+class ObsSurfaceGeometryPolydeuces(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__polydeuces'
+
+
+class ObsSurfaceGeometryPortia(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__portia'
+
+
+class ObsSurfaceGeometryPrometheus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__prometheus'
+
+
+class ObsSurfaceGeometryProteus(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__proteus'
+
+
+class ObsSurfaceGeometryPuck(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__puck'
+
+
+class ObsSurfaceGeometryRhea(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__rhea'
+
+
+class ObsSurfaceGeometryRosalind(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__rosalind'
+
+
+class ObsSurfaceGeometryS2004S12(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__s___2004____s____12'
+
+
+class ObsSurfaceGeometryS2004S13(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__s___2004____s____13'
+
+
+class ObsSurfaceGeometrySaturn(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__saturn'
+
+
+class ObsSurfaceGeometrySiarnaq(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__siarnaq'
+
+
+class ObsSurfaceGeometrySkathi(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__skathi'
+
+
+class ObsSurfaceGeometrySkoll(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__skoll'
 
 
 class ObsSurfaceGeometryStyx(models.Model):
@@ -3347,6 +5805,356 @@ class ObsSurfaceGeometryStyx(models.Model):
         db_table = 'obs_surface_geometry__styx'
 
 
+class ObsSurfaceGeometrySurtur(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__surtur'
+
+
+class ObsSurfaceGeometrySuttungr(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__suttungr'
+
+
+class ObsSurfaceGeometryTarqeq(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__tarqeq'
+
+
+class ObsSurfaceGeometryTarvos(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__tarvos'
+
+
+class ObsSurfaceGeometryTelesto(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__telesto'
+
+
+class ObsSurfaceGeometryTethys(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__tethys'
+
+
+class ObsSurfaceGeometryThalassa(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__thalassa'
+
+
 class ObsSurfaceGeometryThebe(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -3397,6 +6205,256 @@ class ObsSurfaceGeometryThebe(models.Model):
         db_table = 'obs_surface_geometry__thebe'
 
 
+class ObsSurfaceGeometryThrymr(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__thrymr'
+
+
+class ObsSurfaceGeometryTitan(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__titan'
+
+
+class ObsSurfaceGeometryTitania(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__titania'
+
+
+class ObsSurfaceGeometryTriton(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__triton'
+
+
+class ObsSurfaceGeometryUmbriel(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__umbriel'
+
+
 class ObsSurfaceGeometryUranus(models.Model):
     obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
     opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
@@ -3445,6 +6503,56 @@ class ObsSurfaceGeometryUranus(models.Model):
     class Meta:
         managed = False
         db_table = 'obs_surface_geometry__uranus'
+
+
+class ObsSurfaceGeometryYmir(models.Model):
+    obs_general = models.ForeignKey(ObsGeneral, models.DO_NOTHING)
+    opus_id = models.ForeignKey(ObsGeneral, models.DO_NOTHING, related_name='%(class)s_opus_id', db_column='opus_id')
+    volume_id = models.CharField(max_length=11)
+    instrument_id = models.CharField(max_length=9)
+    planetocentric_latitude1 = models.FloatField(blank=True, null=True)
+    planetocentric_latitude2 = models.FloatField(blank=True, null=True)
+    planetographic_latitude1 = models.FloatField(blank=True, null=True)
+    planetographic_latitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude1 = models.FloatField(blank=True, null=True)
+    iau_west_longitude2 = models.FloatField(blank=True, null=True)
+    iau_west_longitude = models.FloatField(blank=True, null=True)
+    d_iau_west_longitude = models.FloatField(blank=True, null=True)
+    solar_hour_angle1 = models.FloatField(blank=True, null=True)
+    solar_hour_angle2 = models.FloatField(blank=True, null=True)
+    solar_hour_angle = models.FloatField(blank=True, null=True)
+    d_solar_hour_angle = models.FloatField(blank=True, null=True)
+    observer_longitude1 = models.FloatField(blank=True, null=True)
+    observer_longitude2 = models.FloatField(blank=True, null=True)
+    observer_longitude = models.FloatField(blank=True, null=True)
+    d_observer_longitude = models.FloatField(blank=True, null=True)
+    finest_resolution1 = models.FloatField(blank=True, null=True)
+    finest_resolution2 = models.FloatField(blank=True, null=True)
+    coarsest_resolution1 = models.FloatField(blank=True, null=True)
+    coarsest_resolution2 = models.FloatField(blank=True, null=True)
+    range_to_body1 = models.FloatField(blank=True, null=True)
+    range_to_body2 = models.FloatField(blank=True, null=True)
+    phase1 = models.FloatField(blank=True, null=True)
+    phase2 = models.FloatField(blank=True, null=True)
+    incidence1 = models.FloatField(blank=True, null=True)
+    incidence2 = models.FloatField(blank=True, null=True)
+    emission1 = models.FloatField(blank=True, null=True)
+    emission2 = models.FloatField(blank=True, null=True)
+    sub_solar_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetocentric_latitude = models.FloatField(blank=True, null=True)
+    sub_observer_planetographic_latitude = models.FloatField(blank=True, null=True)
+    sub_solar_iau_longitude = models.FloatField(blank=True, null=True)
+    sub_observer_iau_longitude = models.FloatField(blank=True, null=True)
+    center_resolution = models.FloatField(blank=True, null=True)
+    center_distance = models.FloatField(blank=True, null=True)
+    center_phase_angle = models.FloatField(blank=True, null=True)
+    id = models.PositiveIntegerField(primary_key=True)
+    timestamp = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'obs_surface_geometry__ymir'
 
 
 class ObsTypeImage(models.Model):
