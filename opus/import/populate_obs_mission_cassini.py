@@ -245,18 +245,23 @@ def helper_cassini_target_name(**kwargs):
         obs_parts = obs_name.split('_')
         target_code = obs_parts[1][-2:]
 
-    # Examine targets that are Saturn or Sky - are they really rings?
-    # Leave STAR observations alone
-    if (target_desc is not None and
-        target_desc.find('RING') != -1 and
-        (target_name == 'SATURN' or target_name == 'SKY') and
+    # 1: TARGET_NAME of SATURN or SKY and TARGET_CODE is one of the rings
+    if ((target_name == 'SATURN' or target_name == 'SKY') and
+        target_code in ('RA','RB','RC','RD','RE','RF','RG','RI')):
+        return ('S RINGS', 'Saturn Rings')
+
+    # 2: TARGET_NAME of SATURN or SKY and TARGET_DESC contains "RING"
+    # (leave TARGET_CODE of "Star" alone)
+    if ((target_name == 'SATURN' or target_name == 'SKY') and
+        target_desc is not None and target_desc.find('RING') != -1 and
         target_code != 'ST'):
         return ('S RINGS', 'Saturn Rings')
-    if (target_desc is not None and
-        target_desc in TARGET_NAME_INFO and
-        target_name == 'SKY' and target_code == 'SK'):
-            # Let TARGET_DESC override TARGET_NAME for Sky/Skeleton
-            return (target_desc.upper(), target_desc.title())
+
+    # 3: TARGET_NAME of SKY and TARGET_CODE of Skeleton, let TARGET_DESC
+    # override TARGET_NAME
+    if (target_name == 'SKY' and target_code == 'SK' and
+        target_desc is not None and target_desc in TARGET_NAME_INFO):
+        return (target_desc.upper(), target_desc.title())
 
     if target_name not in TARGET_NAME_INFO:
         import_util.announce_unknown_target_name(target_name)
