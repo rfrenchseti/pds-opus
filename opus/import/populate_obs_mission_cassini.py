@@ -216,7 +216,7 @@ def helper_cassini_planet_id(**kwargs):
     jup = julian.tai_from_iso('2000-262T00:32:38.930')
     sat = julian.tai_from_iso('2003-138T02:16:18.383')
 
-    if time_sec2 < jup:
+    if time_sec2 is None or time_sec2 < jup:
         return None
     if time_sec2 < sat:
         return 'JUP'

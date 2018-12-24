@@ -75,6 +75,15 @@ def populate_obs_general_NHMVIC_time1(**kwargs):
             f'Bad start time format "{start_time}": {e}')
         return None
 
+    general_row = metadata['obs_general_row']
+    start_time_sec = general_row['time1']
+
+    if start_time_sec is not None and stop_time_sec < start_time_sec:
+        start_time = import_util.safe_column(index_row, 'START_TIME')
+        import_util.log_warning(f'time1 ({start_time}) and time2 ({stop_time}) '
+                                f'are in the wrong order - setting to time1')
+        stop_time_sec = start_time_sec
+
     return start_time_sec
 
 def populate_obs_general_NHMVIC_time2(**kwargs):
