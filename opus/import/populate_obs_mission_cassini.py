@@ -120,7 +120,10 @@ COISS_TARGET_DESC_MAPPING = {
     'METHON': 'METHONE',
     'ROCK': 'ROCKS',
     'STAR -- CW LEO': 'STAR',
-    'STAR -- ETA CAR': 'STAR'
+    'STAR -- ETA CAR': 'STAR',
+    '--': 'UNKNOWN',
+    'UNK': 'UNKNOWN',
+    'F RING': 'SATURN-FRING'
 }
 
 ################################################################################
